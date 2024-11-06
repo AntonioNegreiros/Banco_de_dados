@@ -1,12 +1,12 @@
 import java.sql.Date;
- 
+
 public class Funcionario {
     public int id;
     public String nome;
     public String cpf;
     public Date dataNascimento;
     public String matricula;
- 
+
     public Funcionario(
         int id,
         String nome,
@@ -20,29 +20,29 @@ public class Funcionario {
         this.dataNascimento = dataNascimento;
         this.matricula = matricula;
     }
-   
-   
+
+
     public void setId(int id) {
         this.id = id;
     }
-   
+
     public void setNome(String nome) {
         this.nome = nome;
     }
-   
+
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-   
+
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
-   
+
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
-   
- 
+
+
     public int getId() {
         return this.id;
     }
@@ -58,7 +58,7 @@ public class Funcionario {
     public String getMatricula() {
         return this.matricula;
     }
- 
+
     @Override
     public String toString() {
         return "Id: " + this.getId()
@@ -67,5 +67,5 @@ public class Funcionario {
             + " - Data de Nascimento: " + this.getDataNascimento()
             + " - Matricula: " + this.getMatricula();
     }
- 
+
 }
